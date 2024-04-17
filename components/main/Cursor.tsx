@@ -22,7 +22,7 @@ const Cursor = () => {
     window.addEventListener("mousemove", moveCursor);
   }
 
-  return <div ref={cursorRef} className="cursor"></div>;
+  return <div ref={cursorRef} className="cursor max-md:hidden"></div>;
 };
 
 export default Cursor;
