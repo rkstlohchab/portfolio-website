@@ -67,3 +67,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+.cursor {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+}

@@ -51,8 +51,11 @@ const HeroContent = () => {
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          onClick={() => {
+            window.open("https://drive.google.com/file/d/1BYyisp_hLvAa9FJ0D1VceBiHn0CHL_1w/view?usp=sharing");
+          }}
         >
-          Learn More!
+          Download CV !
         </motion.a>
       </div>
 
