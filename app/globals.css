@@ -79,3 +79,7 @@ html {
     backdrop-filter: blur(3.6px);
     -webkit-backdrop-filter: blur(3.6px);
 }
+
+.z-max{
+    z-index: 1000;
+}
