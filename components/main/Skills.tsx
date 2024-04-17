@@ -76,7 +76,8 @@ const Skills = () => {
             playsInline
             loop
             muted
-            autoPlay
+            autoPlay={true}
+            controls={false}
             src="/cards-video.webm"
           />
         </div>
