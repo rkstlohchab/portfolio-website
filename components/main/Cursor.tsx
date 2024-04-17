@@ -29,7 +29,7 @@ const Cursor = () => {
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setisMobile(window.innerWidth <= 768);
+      setisMobile(window.innerWidth <= 1024);
     };
 
     checkIsMobile();
