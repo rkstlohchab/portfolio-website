@@ -1,9 +1,22 @@
 "use client";
 
 import { gsap } from "gsap";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Cursor = () => {
+  const [isMobile, setisMobile] = useState(false)
+
+  const checkIsMobile = () => {
+    setisMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   const cursorRef = useRef<HTMLDivElement>(null);
 
   const moveCursor = (e: MouseEvent) => {
@@ -15,14 +28,24 @@ const Cursor = () => {
   };
 
   useEffect(() => {
-    gsap.set(cursorRef, { xPercent: 100, yPercent: 100 });
+    const checkIsMobile = () => {
+      setisMobile(window.innerWidth <= 768);
+    };
+
+    checkIsMobile();
+
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
   }, []);
 
   if (typeof window !== "undefined") {
     window.addEventListener("mousemove", moveCursor);
   }
 
-  return <div ref={cursorRef} className="cursor max-md:hidden"></div>;
+  return <div ref={cursorRef} className={`cursor ${isMobile ? ('hidden'):('visible')}`}></div>;
 };
 
 export default Cursor;
