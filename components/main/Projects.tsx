@@ -26,22 +26,23 @@ const Projects = () => {
         </h1>
         <motion.div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
 
-
           {/* Project 1 */}
           <motion.div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
 
             <Image
-              src="/rapp.png"
-              alt='ERC20 Token Exchange Website'
+              src="/devflow.png"
+              alt='DevFlow (StackOverFlow Clone)'
               width={1000}
               height={1000}
               className="w-full object-contain"
             />
             <motion.div className="relative p-4 z-50">
-              <h1 className="text-2xl font-semibold text-white">ERC20 Token Exchange Website</h1>
-              <motion.p className="mt-2 text-gray-300">Website that facilitates the trading of tokens based on the Ethereum blockchain’s ERC-20 standard.</motion.p>
+              <h1 className="text-2xl font-semibold text-white">DevFlow (StackOverFlow Clone)</h1>
+              <motion.p className="mt-2 text-gray-300">
+                A platform where developers can ask questions, provide answers, and share their knowledge with the community
+              </motion.p>
               <motion.a
-                href="https://soft-glade-2476.on.fleek.co/"
+                href="https://devflow-pi-ten.vercel.app/"
                 target="_blank"
                 className="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-md "
               >
@@ -54,17 +55,19 @@ const Projects = () => {
           <motion.div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
 
             <Image
-              src="/appol.png"
-              alt='Apple Website Clone'
+              src="/liveDocuments.png"
+              alt='LiveDocs'
               width={1000}
               height={1000}
               className="w-full object-contain"
             />
             <motion.div className="relative p-4 z-50">
-              <h1 className="text-2xl font-semibold text-white">Apple Website Clone</h1>
-              <motion.p className="mt-2 text-gray-300">Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D models.</motion.p>
+              <h1 className="text-2xl font-semibold text-white">LiveDocs</h1>
+              <motion.p className="mt-2 text-gray-300">
+                A platform where users can create, edit, and collaborate on documents in real-time
+              </motion.p>
               <motion.a
-                href="https://appol.netlify.app/"
+                href="https://live-docs-livid.vercel.app/"
                 target="_blank"
                 className="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-md "
               >
@@ -73,6 +76,8 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
+          
+
         </motion.div>
       </motion.div>
     </motion.div>
@@ -80,3 +85,49 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// {/* Project 3 */}
+//           <motion.div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+
+//             <Image
+//               src="/appol.png"
+//               alt='Apple Website Clone'
+//               width={1000}
+//               height={1000}
+//               className="w-full object-contain"
+//             />
+//             <motion.div className="relative p-4 z-50">
+//               <h1 className="text-2xl font-semibold text-white">Apple Website Clone</h1>
+//               <motion.p className="mt-2 text-gray-300">Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D models.</motion.p>
+//               <motion.a
+//                 href="https://appol.netlify.app/"
+//                 target="_blank"
+//                 className="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-md "
+//               >
+//                 View Project
+//               </motion.a>
+//             </motion.div>
+//           </motion.div>
+
+//           {/* Project 4 */}
+//           <motion.div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+
+//             <Image
+//               src="/rapp.png"
+//               alt='ERC20 Token Exchange Website'
+//               width={1000}
+//               height={1000}
+//               className="w-full object-contain"
+//             />
+//             <motion.div className="relative p-4 z-50">
+//               <h1 className="text-2xl font-semibold text-white">ERC20 Token Exchange Website</h1>
+//               <motion.p className="mt-2 text-gray-300">Website that facilitates the trading of tokens based on the Ethereum blockchain’s ERC-20 standard.</motion.p>
+//               <motion.a
+//                 href="https://soft-glade-2476.on.fleek.co/"
+//                 target="_blank"
+//                 className="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-md "
+//               >
+//                 View Project
+//               </motion.a>
+//             </motion.div>
+//           </motion.div>
